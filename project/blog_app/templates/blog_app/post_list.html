@@ -2,7 +2,10 @@
 {% block body_block%}
 
 <div class="centerstage">
-  <h1>All Posts</h1>
+  <div class="alert alert-secondary" role="alert">
+  Use this: (Username:visitor Password:visitor) to Login and explore
+</div>
+<h1>All Posts</h1>
   {% for post in post_list%}
   <div class="posta">
     <h3><a href="{% url 'post_detail' pk=post.pk%}">{{post.title}}</a></h3>
